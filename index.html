@@ -29,145 +29,147 @@
 
   <div class="row">
     <div class="col s12 m12">
-      <div class="input-field col s12">
-          <select id="tfio">
-            <option value="" disabled selected>Tipo de Fio</option>
-            <option value="pes">Poliester</option>
-            <option value="pa">Poliamida</option>
-            <option value="poy">POY</option>
-          </select>
-          <label>Escolha o Tipo de Fio</label>
-      </div>
-      <div class="input-field col s12" id="dtexfio">
-          <select id="dtexfio-1">
-            <option value="" disabled selected>DTex</option>
-            <option value="44">44</option>
-            <option value="78">78</option>
-            <option value="167">167</option>
-          </select>
-          <label>Escolha o DTex do Fio</label>
-      </div>
-      <div class="input-field col s12" id="pes44">
-          <select id="pes44-1">
-            <option value="" disabled selected>Fio PES 44</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
-          </select>
-          <label>Escolha o Fio PES 44</label>
-      </div>
-      <div class="input-field col s12" id="pes78">
-          <select id="pes78-1">
-            <option value="" disabled selected>Fio PES 78</option>
-            <option value="1">JBF PES 75f36/1 Z</option>
-            <option value="2">VINEET PES 76f36/1 Z</option>
-            <option value="3">Option 3</option>
-          </select>
-          <label>Escolha o Fio PES 78</label>
-      </div>
-      <div class="input-field col s12" id="pes167">
-          <select id="pes167-1">
-            <option value="" disabled selected>Fio PES 167</option>
-            <option value="1">VINEET PES 167f48/1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
-          </select>
-          <label>Escolha o Fio PES 167</label>
-      </div>
-      <div class="input-field col s12" id="dtexelas">
-          <select id="dtexelas-1">
-            <option value="" disabled selected>DTEX Elastano</option>
-            <option value="1">17</option>
-            <option value="2">22</option>
-            <option value="3">33</option>
-            <option value="4">44</option>
-            <option value="5">78</option>
-          </select>
-          <label>Escolha o Elastano</label>
-      </div>
-      <div class="input-field col s12" id="elas17">
-          <select id="elas17-1">
-            <option value="" disabled selected>Elastano 17</option>
-            <option value="1">AA</option>
-            <option value="2">AA</option>
-            <option value="3">AA</option>
-            <option value="4">AA</option>
-            <option value="5">AA</option>
-          </select>
-          <label>Escolha o Elastano 17</label>
-      </div>
-      <div class="input-field col s12" id="elas22">
-          <select id="elas22-1">
-            <option value="" disabled selected>Elastano 22</option>
-            <option value="1">ACELAN 22</option>
-            <option value="2">TEXLON 22</option>
-            <option value="3">AA</option>
-            <option value="4">AA</option>
-            <option value="5">AA</option>
-          </select>
-          <label>Escolha o Elastano 22</label>
-      </div>
-      <div class="input-field col s12" id="elas33">
-          <select id="elas33-1">
-            <option value="" disabled selected>Elastano 33</option>
-            <option value="1">UOLI 33</option>
-            <option value="2">AA</option>
-            <option value="3">AA</option>
-            <option value="4">AA</option>
-            <option value="5">AA</option>
-          </select>
-          <label>Escolha o Elastano 33</label>
-      </div>
-      <div class="input-field col s12" id="elas44">
-          <select id="elas44-1">
-            <option value="" disabled selected>Elastano 44</option>
-            <option value="1">ACELAN 44 CLEAR</option>
-            <option value="2">UOLI 33</option>
-            <option value="3">SPANDEX 44</option>
-            <option value="4">AA</option>
-            <option value="5">AA</option>
-          </select>
-          <label>Escolha o Elastano 44</label>
-      </div>
-      <div class="input-field col s12" id="elas78">
-          <select id="elas78-1">
-            <option value="" disabled selected>Elastano 78</option>
-            <option value="1">ACELAN 78</option>
-            <option value="2">AA</option>
-            <option value="3">AA</option>
-            <option value="4">AA</option>
-            <option value="5">AA</option>
-          </select>
-          <label>Escolha o Elastano 78</label>
-      </div>
-      <div class="input-field col s12" id="ncabos">
-          <select id="ncabos-1">
-            <option value="" disabled selected>Nº cabos</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">4</option>
-          </select>
-          <label>Escolha o nº cabos</label>
-      </div>
-      <div class="input-field col s12" id="tcone">
-          <select  id="tcone-1">
-            <option value="" disabled selected>Tipo de Cone</option>
-            <option value="1">Pequeno</option>
-            <option value="2">Grande</option>
-          </select>
-          <label>Escolha o Tipo de Cone</label>
-      </div>
-      <div class="input-field col s12" id="tirag">
-          <select  id="tirag-1">
-            <option value="" disabled selected>Tiragem</option>
-            <option value="1">2.6</option>
-            <option value="2">3.0</option>
-            <option value="3">3.15</option>
-            <option value="4">3.3</option>
-            <option value="5">3.45</option>
-          </select>
-          <label>Escolha a Tiragem</label>
-      </div>
+      <form>
+        <div class="input-field col s12">
+            <select id="tfio">
+              <option value="" disabled selected>Tipo de Fio</option>
+              <option value="pes">Poliester</option>
+              <option value="pa">Poliamida</option>
+              <option value="poy">POY</option>
+            </select>
+            <label>Escolha o Tipo de Fio</label>
+        </div>
+        <div class="input-field col s12" id="dtexfio">
+            <select id="dtexfio-1">
+              <option value="" disabled selected>DTex</option>
+              <option value="44">44</option>
+              <option value="78">78</option>
+              <option value="167">167</option>
+            </select>
+            <label>Escolha o DTex do Fio</label>
+        </div>
+        <div class="input-field col s12" id="pes44">
+            <select id="pes44-1">
+              <option value="" disabled selected>Fio PES 44</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <label>Escolha o Fio PES 44</label>
+        </div>
+        <div class="input-field col s12" id="pes78">
+            <select id="pes78-1">
+              <option value="" disabled selected>Fio PES 78</option>
+              <option value="1">JBF PES 75f36/1 Z</option>
+              <option value="2">VINEET PES 76f36/1 Z</option>
+              <option value="3">Option 3</option>
+            </select>
+            <label>Escolha o Fio PES 78</label>
+        </div>
+        <div class="input-field col s12" id="pes167">
+            <select id="pes167-1">
+              <option value="" disabled selected>Fio PES 167</option>
+              <option value="1">VINEET PES 167f48/1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <label>Escolha o Fio PES 167</label>
+        </div>
+        <div class="input-field col s12" id="dtexelas">
+            <select id="dtexelas-1">
+              <option value="" disabled selected>DTEX Elastano</option>
+              <option value="17">17</option>
+              <option value="22">22</option>
+              <option value="33">33</option>
+              <option value="44">44</option>
+              <option value="78">78</option>
+            </select>
+            <label>Escolha o Elastano</label>
+        </div>
+        <div class="input-field col s12" id="elas17">
+            <select id="elas17-1">
+              <option value="" disabled selected>Elastano 17</option>
+              <option value="1">AA</option>
+              <option value="2">AA</option>
+              <option value="3">AA</option>
+              <option value="4">AA</option>
+              <option value="5">AA</option>
+            </select>
+            <label>Escolha o Elastano 17</label>
+        </div>
+        <div class="input-field col s12" id="elas22">
+            <select id="elas22-1">
+              <option value="" disabled selected>Elastano 22</option>
+              <option value="1">ACELAN 22</option>
+              <option value="2">TEXLON 22</option>
+              <option value="3">AA</option>
+              <option value="4">AA</option>
+              <option value="5">AA</option>
+            </select>
+            <label>Escolha o Elastano 22</label>
+        </div>
+        <div class="input-field col s12" id="elas33">
+            <select id="elas33-1">
+              <option value="" disabled selected>Elastano 33</option>
+              <option value="1">UOLI 33</option>
+              <option value="2">AA</option>
+              <option value="3">AA</option>
+              <option value="4">AA</option>
+              <option value="5">AA</option>
+            </select>
+            <label>Escolha o Elastano 33</label>
+        </div>
+        <div class="input-field col s12" id="elas44">
+            <select id="elas44-1">
+              <option value="" disabled selected>Elastano 44</option>
+              <option value="1">ACELAN 44 CLEAR</option>
+              <option value="2">UOLI 44</option>
+              <option value="3">SPANDEX 44</option>
+              <option value="4">AA</option>
+              <option value="5">AA</option>
+            </select>
+            <label>Escolha o Elastano 44</label>
+        </div>
+        <div class="input-field col s12" id="elas78">
+            <select id="elas78-1">
+              <option value="" disabled selected>Elastano 78</option>
+              <option value="1">ACELAN 78</option>
+              <option value="2">AA</option>
+              <option value="3">AA</option>
+              <option value="4">AA</option>
+              <option value="5">AA</option>
+            </select>
+            <label>Escolha o Elastano 78</label>
+        </div>
+        <div class="input-field col s12" id="ncabos">
+            <select id="ncabos-1">
+              <option value="" disabled selected>Nº cabos</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">4</option>
+            </select>
+            <label>Escolha o nº cabos</label>
+        </div>
+        <div class="input-field col s12" id="tcone">
+            <select  id="tcone-1">
+              <option value="" disabled selected>Tipo de Cone</option>
+              <option value="1">Pequeno</option>
+              <option value="2">Grande</option>
+            </select>
+            <label>Escolha o Tipo de Cone</label>
+        </div>
+        <div class="input-field col s12" id="tirag">
+            <select  id="tirag-1">
+              <option value="" disabled selected>Tiragem</option>
+              <option value="1">2.6</option>
+              <option value="2">3.0</option>
+              <option value="3">3.15</option>
+              <option value="4">3.3</option>
+              <option value="5">3.45</option>
+            </select>
+            <label>Escolha a Tiragem</label>
+        </div>
+      </form>
     </div>
   </div>
 

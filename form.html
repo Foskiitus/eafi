@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>EPEL - Afinação</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">EPEL</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Menu</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Menu</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="card-panel teal center-align" style="margin-top:0; ">
+    <span class="white-text"><h3 style="text-align:center;">Afinações GD</h3></span>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m12">
+      <div class="input-field col s12">
+          <select id="slct1" name="slct1" onchange="populate(this.id,'slct2')">
+            <option value="" disabled selected>Tipo de Fio</option>
+            <option value="pes">Poliester</option>
+            <option value="pa">Poliamida</option>
+            <option value="poy">POY</option>
+          </select>
+          <label>Escolha o Tipo de Fio</label>
+      </div>
+      <div class="input-field col s12" id="dtexfio">
+          <select id="slct2" name="slct2">
+            <option value="" disabled selected>Fio PES 44</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+          <label>Escolha o DTex do Fio</label>
+          <hr />
+      </div>
+      <div class="input-field col s12" id="pes44">
+          <select id="pes44-1">
+            <option value="" disabled selected>Fio PES 44</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+          <label>Escolha o Fio PES 44</label>
+      </div>
+      <div class="input-field col s12" id="pes78">
+          <select id="pes78-1">
+            <option value="" disabled selected>Fio PES 78</option>
+            <option value="1">JBF PES 75f36/1 Z</option>
+            <option value="2">VINEET PES 76f36/1 Z</option>
+            <option value="3">Option 3</option>
+          </select>
+          <label>Escolha o Fio PES 78</label>
+      </div>
+      <div class="input-field col s12" id="pes167">
+          <select id="pes167-1">
+            <option value="" disabled selected>Fio PES 167</option>
+            <option value="1">VINEET PES 167f48/1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+          <label>Escolha o Fio PES 167</label>
+      </div>
+      <div class="input-field col s12" id="dtexelas">
+          <select id="dtexelas-1">
+            <option value="" disabled selected>DTEX Elastano</option>
+            <option value="1">17</option>
+            <option value="2">22</option>
+            <option value="3">33</option>
+            <option value="4">44</option>
+            <option value="5">78</option>
+          </select>
+          <label>Escolha o Elastano</label>
+      </div>
+      <div class="input-field col s12" id="elas17">
+          <select id="elas17-1">
+            <option value="" disabled selected>Elastano 17</option>
+            <option value="1">AA</option>
+            <option value="2">AA</option>
+            <option value="3">AA</option>
+            <option value="4">AA</option>
+            <option value="5">AA</option>
+          </select>
+          <label>Escolha o Elastano 17</label>
+      </div>
+      <div class="input-field col s12" id="elas22">
+          <select id="elas22-1">
+            <option value="" disabled selected>Elastano 22</option>
+            <option value="1">ACELAN 22</option>
+            <option value="2">TEXLON 22</option>
+            <option value="3">AA</option>
+            <option value="4">AA</option>
+            <option value="5">AA</option>
+          </select>
+          <label>Escolha o Elastano 22</label>
+      </div>
+      <div class="input-field col s12" id="elas33">
+          <select id="elas33-1">
+            <option value="" disabled selected>Elastano 33</option>
+            <option value="1">UOLI 33</option>
+            <option value="2">AA</option>
+            <option value="3">AA</option>
+            <option value="4">AA</option>
+            <option value="5">AA</option>
+          </select>
+          <label>Escolha o Elastano 33</label>
+      </div>
+      <div class="input-field col s12" id="elas44">
+          <select id="elas44-1">
+            <option value="" disabled selected>Elastano 44</option>
+            <option value="1">ACELAN 44 CLEAR</option>
+            <option value="2">UOLI 33</option>
+            <option value="3">SPANDEX 44</option>
+            <option value="4">AA</option>
+            <option value="5">AA</option>
+          </select>
+          <label>Escolha o Elastano 44</label>
+      </div>
+      <div class="input-field col s12" id="elas78">
+          <select id="elas78-1">
+            <option value="" disabled selected>Elastano 78</option>
+            <option value="1">ACELAN 78</option>
+            <option value="2">AA</option>
+            <option value="3">AA</option>
+            <option value="4">AA</option>
+            <option value="5">AA</option>
+          </select>
+          <label>Escolha o Elastano 78</label>
+      </div>
+      <div class="input-field col s12" id="ncabos">
+          <select id="ncabos-1">
+            <option value="" disabled selected>Nº cabos</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">4</option>
+          </select>
+          <label>Escolha o nº cabos</label>
+      </div>
+      <div class="input-field col s12" id="tcone">
+          <select  id="tcone-1">
+            <option value="" disabled selected>Tipo de Cone</option>
+            <option value="1">Pequeno</option>
+            <option value="2">Grande</option>
+          </select>
+          <label>Escolha o Tipo de Cone</label>
+      </div>
+      <div class="input-field col s12" id="tirag">
+          <select  id="tirag-1">
+            <option value="" disabled selected>Tiragem</option>
+            <option value="1">2.6</option>
+            <option value="2">3.0</option>
+            <option value="3">3.15</option>
+            <option value="4">3.3</option>
+            <option value="5">3.45</option>
+          </select>
+          <label>Escolha a Tiragem</label>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/customform.js"></script>
+
+  </body>
+</html>
