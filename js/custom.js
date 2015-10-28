@@ -5,7 +5,6 @@ $(document).ready(function() {
   toggleFields1();
   toggleFields2();
   toggleFields3();
-  toggleFields4();
 
   $("#tfio").change(function () {
       toggleFields();
@@ -47,4 +46,4 @@ function toggleFields3() {
       $("#pes167").show();
   else
       $("#pes167").hide();
-}
+};
