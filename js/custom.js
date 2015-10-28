@@ -27,12 +27,24 @@ $(document).ready(function() {
 function toggleFields() {
   if ($("#tfio").val() == "pes")
       $("#dtexfio").show();
-  else if (($("#tfio").val() == "pes" && $("#dtexfio-1").val() == "44"))
-    $("#dtexfio").show();
-    $("#pes44").show();
   else
       $("#dtexfio").hide();
-      $("#pes44").hide();
-      $("#pes78").hide();
-      $("#pes167").hide();
 };
+function toggleFields1() {
+  if ($("#tfio").val() == "pes" && $("#dtexfio-1").val() == "44")
+      $("#pes44").show();
+  else
+      $("#pes44").hide();
+};
+function toggleFields2() {
+  if ($("#tfio").val() == "pes" && $("#dtexfio-1").val() == "78")
+      $("#pes78").show();
+  else
+      $("#pes78").hide();
+};
+function toggleFields3() {
+  if ($("#tfio").val() == "pes" && $("#dtexfio-1").val() == "167")
+      $("#pes167").show();
+  else
+      $("#pes167").hide();
+}
