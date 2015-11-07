@@ -2,7 +2,7 @@
 <widget id="pt.photocelos.epel" version="1.0.6" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>EPEL Afinacao</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Programa com as programações das GD.
     </description>
     <author email="foskiitus@gmail.com" href="http://photocelos.pt">
         PhotoCelos Team
